@@ -9,7 +9,7 @@
     "client": "npm start --prefix clientside",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client-install": "npm install --prefix clientside",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix clientside && npm run build --prefix clientside"
+   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd clientside && npm install cd clientside && npm build"
   },
   "author": "Zak Ali",
   "license": "MIT",
